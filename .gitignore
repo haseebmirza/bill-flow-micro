@@ -1,0 +1,50 @@
+# Dependencies
+payment-api/vendor/
+invoice-service/venv/
+invoice-service/__pycache__/
+notification-service/node_modules/
+dashboard/node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+payment-api/storage/logs/
+
+# Laravel
+payment-api/storage/framework/cache/data/*
+payment-api/storage/framework/sessions/*
+payment-api/storage/framework/views/*
+payment-api/bootstrap/cache/*
+
+
+# Database
+*.sqlite
+*.sqlite-journal
+*.db
+
+# Python
+*.pyc
+__pycache__/
+
+# Build output
+dashboard/dist/
+
+# Docker volumes
+docker-data/
+
+# Specs
+specs/
+
+# OS
+Thumbs.db

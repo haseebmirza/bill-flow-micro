@@ -1,0 +1,16 @@
+{
+  "name": "billflow-notification-service",
+  "version": "1.0.0",
+  "description": "BillFlow notification service - sends email notifications on payment events",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "kafkajs": "^2.2.4",
+    "nodemailer": "^6.9.0",
+    "dotenv": "^16.4.0"
+  }
+}
