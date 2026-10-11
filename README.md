@@ -6,17 +6,17 @@ Built to demonstrate: microservices patterns, event-driven architecture, service
 
 ## Screenshots
 
-| Dashboard | Payments |
-|-----------|----------|
-| ![Dashboard](docs/screenshots/dashboard.jpg) | ![Payments](docs/screenshots/payments.jpg) |
+| Dashboard (Light) | Dashboard (Dark) |
+|-------------------|------------------|
+| ![Dashboard](docs/screenshots/dashboard.jpg) | ![Dashboard Dark](docs/screenshots/dashboard-dark.jpg) |
 
-| Create Payment | Invoices |
-|----------------|----------|
-| ![Create Payment](docs/screenshots/create-payment.jpg) | ![Invoices](docs/screenshots/invoices.jpg) |
+| Payments | Invoices |
+|----------|----------|
+| ![Payments](docs/screenshots/payments.jpg) | ![Invoices](docs/screenshots/invoices.jpg) |
 
-| Kafka UI — Event Topics |
-|-------------------------|
-| ![Kafka UI](docs/screenshots/kafka-ui.jpg) |
+| Create Payment | Kafka UI — Event Topics |
+|----------------|-------------------------|
+| ![Create Payment](docs/screenshots/create-payment.jpg) | ![Kafka UI](docs/screenshots/kafka-ui.jpg) |
 
 ## Architecture
 
@@ -52,7 +52,7 @@ Built to demonstrate: microservices patterns, event-driven architecture, service
 | Payment API | Laravel (PHP 8.3) | 8001 | MariaDB | Accepts payments, publishes events to Kafka |
 | Invoice Service | FastAPI (Python 3.9) | 8002 | PostgreSQL | Auto-generates invoices on payment completion |
 | Notification Service | Node.js + Express | 8003 | None | Sends email notifications on payment events |
-| Dashboard | Vue 3 + Vite + Tailwind | 5173 | None | Frontend for viewing payments and invoices |
+| Dashboard | Vue 3 + Vite + Tailwind | 5173 | None | Frontend with dark/light mode, charts, and service health |
 
 ## Event Flow
 

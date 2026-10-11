@@ -15,3 +15,10 @@ export function createPayment(data) {
 export function refundPayment(uuid) {
   return paymentApi.post(`/payments/${uuid}/refund`);
 }
+
+export function simulateWebhook(uuid, status) {
+  return paymentApi.post("/webhooks/stripe", {
+    payment_uuid: uuid,
+    status,
+  });
+}
